@@ -7,6 +7,7 @@ from api.public.listing import views as listings
 from api.public.listing_picture import views as listing_pictures
 from api.public.user_access_requests import views as user_accept_requests
 from api.public.payments import views as payments
+from api.public.reviews import views as reviews
 
 
 api = APIRouter()
@@ -61,5 +62,11 @@ api.include_router(
     payments.router,
     prefix="/payments",
     tags=["Payments"],
+    # dependencies=[Depends(authent)],
+)
+api.include_router(
+    reviews.router,
+    prefix="/reviews",
+    tags=["Reviews"],
     # dependencies=[Depends(authent)],
 )
