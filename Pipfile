@@ -1,0 +1,43 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pydantic-settings = "*"
+boto3 = "*"
+python-multipart = "*"
+alembic = "*"
+telegram-webapp-auth = "*"
+pandas = "*"
+numpy = "*"
+aiogram = "2.25.2"
+'psycopg2-binary' = "*"
+sqlalchemy = "*"
+async-stripe = "*"
+pydantic = "*"
+sqlmodel = "*"
+'fastapi-users' = "*"
+'fastapi-users[sqlalchemy]' = "*"
+'fastapi-users[oauth]' = "*"
+'fastapi-users-db-sqlmodel' = "*"
+openai = "0.28.1"
+gunicorn = "*"
+jupyter = "*"
+pillow = "*"
+stripe = "*"
+
+#sudo apt-get install -y apache2
+#sudo apt install -y certbot python3-certbot-apache
+
+[dev-packages]
+black = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true
